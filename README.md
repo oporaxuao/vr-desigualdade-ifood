@@ -19,7 +19,7 @@ O problema não está em "aceitar VR", mas em "aceitar a bandeira certa", e isso
 
 Painel construído no Looker Studio (Data Studio), com KPIs, cobertura por bandeira, comparação por quartil de renda e mapa de cobertura por distrito.
 
-**[Acesse o dashboard interativo aqui](COLAR_LINK_PUBLICO_DO_DASHBOARD_AQUI)**
+**[Acesse o dashboard interativo aqui](Chttps://datastudio.google.com/reporting/d38c9e68-5d34-4d7f-b5c8-922fe8e620d6/page/EnZ1F)**
 
 ![Visão geral do dashboard](images/dashboard_overview.png)
 
@@ -88,7 +88,7 @@ Python (pandas, NumPy, scikit-learn, XGBoost, SHAP, Folium, matplotlib), anális
 
 ![Cobertura por bandeira e por quartil](images/cobertura_bandeiras.png)
 
-![Mapa de cobertura por distrito](images/mapa_cobertura_vr.png)
+![Mapa de cobertura por distrito](images/mapa_cobertura.png)
 
 *Cada bolha é um distrito. O tamanho representa a quantidade média de bandeiras privadas aceitas (de 0,75 a 3,75) e a cor indica o quartil de renda: roxo para Q1 (alto), amarelo para Q2 (médio-alto), laranja para Q3 (médio) e vermelho para Q4 (popular).*
 
@@ -102,7 +102,7 @@ Python (pandas, NumPy, scikit-learn, XGBoost, SHAP, Folium, matplotlib), anális
 
 João Alfredo de Sousa Siqueira
 Cientista de Dados | São Paulo
-[GitHub](https://github.com/oporaxuao) · [LinkedIn](COLAR_LINK_LINKEDIN)
+[GitHub](https://github.com/oporaxuao) · [LinkedIn](https://www.linkedin.com/in/joaosoussiqueira/)
 
 ---
 
