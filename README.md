@@ -45,6 +45,14 @@ Cobertura por bandeira: iFood Benefícios 96,6%, VR 64,5%, Sodexo 64,2%, Ticket 
 
 Comparado a edições anteriores dos dados, o sinal de desigualdade aparece mais atenuado nesta análise (2025): as correlações lineares enfraqueceram e parte do efeito é mediada pela composição de categorias de cada distrito. A tese central, porém, se mantém e até se reforça. Optei por reportar a desigualdade como uma tendência entre faixas de renda, sustentada por testes ordinais, em vez de uma relação linear forte, por ser a leitura mais honesta do que os dados de fato mostram. Tratar achados com essa transparência, em vez de superdimensioná-los, é parte do que considero análise responsável.
 
+## Outros achados
+
+**A liderança se reparte entre três operadoras, não uma.** Cada bandeira domina um tipo de comida diferente: o VR Benefícios lidera nas categorias de maior volume e consumo popular (Lanches 80%, Pizza 72%, Marmita 47%), o Sodexo lidera em Brasileira (64%) e Japonesa, e o Ticket domina os nichos de maior cobertura (Árabe 88%, Saudável 77%, Padaria 50%). O Alelo não lidera em nenhuma categoria, apesar de ser a maior operadora do país. A desigualdade de acesso tem, portanto, uma dimensão de tipo de comida, não só geográfica.
+
+**As bandeiras regionais invertem a lógica.** Ao contrário das nacionais, as bandeiras regionais (Verocard, Greencard e similares) se concentram nos distritos de menor renda, com correlação negativa e significativa (r = -0,37; p = 0,02). São operadoras ligadas a empregadores das regiões mais populares, e aparecem sobretudo em categorias de bairro (Pizza, Lanches, Marmita), ausentes de Padaria e Saudável.
+
+**O modelo confirma o território como bloco, não a renda isolada.** Na interpretação via SHAP, nenhum fator domina sozinho. Somados, os três indicadores socioeconômicos do distrito (renda, oferta de emprego e desigualdade) pesam mais do que qualquer atributo isolado do restaurante, embora atributos do próprio estabelecimento (categoria, taxa de entrega) tenham ganhado peso relativo em 2025. Isso matiza, sem contradizer, a análise exploratória.
+
 ## Metodologia
 
 Projeto estruturado em CRISP-DM. Amostragem estratificada de 40 distritos, 10 por quartil do ranking de Trabalho e Renda, com 20 restaurantes por distrito.
