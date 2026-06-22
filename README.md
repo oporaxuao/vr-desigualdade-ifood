@@ -19,7 +19,7 @@ O problema não está em "aceitar VR", mas em "aceitar a bandeira certa", e isso
 
 Painel construído no Looker Studio (Data Studio), com KPIs, cobertura por bandeira, comparação por quartil de renda e mapa de cobertura por distrito.
 
-**[Acesse o dashboard interativo aqui](Chttps://datastudio.google.com/reporting/d38c9e68-5d34-4d7f-b5c8-922fe8e620d6/page/EnZ1F)**
+**[Acesse o dashboard interativo aqui](https://datastudio.google.com/reporting/d38c9e68-5d34-4d7f-b5c8-922fe8e620d6)**
 
 ![Visão geral do dashboard](images/dashboard_overview.png)
 
