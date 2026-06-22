@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22b70f9bb9686663a3b291f83094228f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22b70f9bb9686663a3b291f83094228f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22b70f9bb9686663a3b291f83094228f = L.map(
+                "map_22b70f9bb9686663a3b291f83094228f",
+                {
+                    center: [-23.55, -46.63],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc432909925a11009b2a30e352b9f209 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dc432909925a11009b2a30e352b9f209.addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+            var circle_marker_e876b0f1627d26fd760ed520d0ff8850 = L.circleMarker(
+                [-23.57, -46.56],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90c750ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.75, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_ab54c0eac8e3f0b57546833f69f83da8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d0fa0b30e78173cbb7b9b6edff450b17 = $(`<div id="html_d0fa0b30e78173cbb7b9b6edff450b17" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Agua Rasa</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,086<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.2 de 4<br>       <b>Alelo:</b> 70% &nbsp; <b>Sodexo:</b> 90%<br>       <b>VR:</b> 80% &nbsp; <b>Ticket:</b> 85%     </div></div>`)[0];
+                popup_ab54c0eac8e3f0b57546833f69f83da8.setContent(html_d0fa0b30e78173cbb7b9b6edff450b17);
+            
+        
+
+        circle_marker_e876b0f1627d26fd760ed520d0ff8850.bindPopup(popup_ab54c0eac8e3f0b57546833f69f83da8)
+        ;
+
+        
+    
+    
+            circle_marker_e876b0f1627d26fd760ed520d0ff8850.bindTooltip(
+                `<div>
+                     Agua Rasa: 3.2 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90e7794a0660be14381711105ec74650 = L.circleMarker(
+                [-23.5391, -46.7142],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b92cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.649999999999999, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_42e257bdfccfc19cc1c63e7657beadca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_702e0a834f6b9aaf49dadc8b2a1987fc = $(`<div id="html_702e0a834f6b9aaf49dadc8b2a1987fc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Alto De Pinheiros</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 8,116<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 75% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_42e257bdfccfc19cc1c63e7657beadca.setContent(html_702e0a834f6b9aaf49dadc8b2a1987fc);
+            
+        
+
+        circle_marker_90e7794a0660be14381711105ec74650.bindPopup(popup_42e257bdfccfc19cc1c63e7657beadca)
+        ;
+
+        
+    
+    
+            circle_marker_90e7794a0660be14381711105ec74650.bindTooltip(
+                `<div>
+                     Alto De Pinheiros: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2543f4894f82e6e820729bda11dcfdd4 = L.circleMarker(
+                [-23.435, -46.79],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f26616ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.3, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_4a89da3f6bfc46badb7cd7eb21f87f1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4586b7cc9676f9f93513434ddee60d20 = $(`<div id="html_4586b7cc9676f9f93513434ddee60d20" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Anhanguera</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 3,643<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.1 de 4<br>       <b>Alelo:</b> 10% &nbsp; <b>Sodexo:</b> 40%<br>       <b>VR:</b> 30% &nbsp; <b>Ticket:</b> 30%     </div></div>`)[0];
+                popup_4a89da3f6bfc46badb7cd7eb21f87f1b.setContent(html_4586b7cc9676f9f93513434ddee60d20);
+            
+        
+
+        circle_marker_2543f4894f82e6e820729bda11dcfdd4.bindPopup(popup_4a89da3f6bfc46badb7cd7eb21f87f1b)
+        ;
+
+        
+    
+    
+            circle_marker_2543f4894f82e6e820729bda11dcfdd4.bindTooltip(
+                `<div>
+                     Anhanguera: 1.1 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4a6ab566159902510dd900a7bbedf26 = L.circleMarker(
+                [-23.558, -46.648],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_4994a0b1b960337fecca6d8b69506df5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_25412fc0aab7d64cf7f0bee8703c0f06 = $(`<div id="html_25412fc0aab7d64cf7f0bee8703c0f06" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Bela Vista</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 6,195<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.8 de 4<br>       <b>Alelo:</b> 90% &nbsp; <b>Sodexo:</b> 95%<br>       <b>VR:</b> 95% &nbsp; <b>Ticket:</b> 95%     </div></div>`)[0];
+                popup_4994a0b1b960337fecca6d8b69506df5.setContent(html_25412fc0aab7d64cf7f0bee8703c0f06);
+            
+        
+
+        circle_marker_f4a6ab566159902510dd900a7bbedf26.bindPopup(popup_4994a0b1b960337fecca6d8b69506df5)
+        ;
+
+        
+    
+    
+            circle_marker_f4a6ab566159902510dd900a7bbedf26.bindTooltip(
+                `<div>
+                     Bela Vista: 3.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd45b54730e437eb639b765e72d8c7d3 = L.circleMarker(
+                [-23.571, -46.708],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f27b19ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.2, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_15a7dd161f25a403bfa12f5e60d0d25b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f3e79f6364d412892c0aadd3b2ffd282 = $(`<div id="html_f3e79f6364d412892c0aadd3b2ffd282" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Butanta</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 5,659<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.4 de 4<br>       <b>Alelo:</b> 30% &nbsp; <b>Sodexo:</b> 40%<br>       <b>VR:</b> 35% &nbsp; <b>Ticket:</b> 35%     </div></div>`)[0];
+                popup_15a7dd161f25a403bfa12f5e60d0d25b.setContent(html_f3e79f6364d412892c0aadd3b2ffd282);
+            
+        
+
+        circle_marker_cd45b54730e437eb639b765e72d8c7d3.bindPopup(popup_15a7dd161f25a403bfa12f5e60d0d25b)
+        ;
+
+        
+    
+    
+            circle_marker_cd45b54730e437eb639b765e72d8c7d3.bindTooltip(
+                `<div>
+                     Butanta: 1.4 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f13d599c970d72082dd002636a003545 = L.circleMarker(
+                [-23.62, -46.668],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e9c333ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.399999999999999, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_4d84001f737dca08d92debf1b9f76986 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_165c7acb2579b17d757d6fe32ff84087 = $(`<div id="html_165c7acb2579b17d757d6fe32ff84087" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Campo Belo</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 5,822<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.8 de 4<br>       <b>Alelo:</b> 60% &nbsp; <b>Sodexo:</b> 75%<br>       <b>VR:</b> 75% &nbsp; <b>Ticket:</b> 70%     </div></div>`)[0];
+                popup_4d84001f737dca08d92debf1b9f76986.setContent(html_165c7acb2579b17d757d6fe32ff84087);
+            
+        
+
+        circle_marker_f13d599c970d72082dd002636a003545.bindPopup(popup_4d84001f737dca08d92debf1b9f76986)
+        ;
+
+        
+    
+    
+            circle_marker_f13d599c970d72082dd002636a003545.bindTooltip(
+                `<div>
+                     Campo Belo: 2.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60af67b99e21cfeda41d9b0f1b925551 = L.circleMarker(
+                [-23.648, -46.758],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2921dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_850b23c3bf3c9f650e13dcee00ded317 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d814391b734fc1d9d47ebf92460f016b = $(`<div id="html_d814391b734fc1d9d47ebf92460f016b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Campo Limpo</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,542<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.8 de 4<br>       <b>Alelo:</b> 35% &nbsp; <b>Sodexo:</b> 45%<br>       <b>VR:</b> 50% &nbsp; <b>Ticket:</b> 45%     </div></div>`)[0];
+                popup_850b23c3bf3c9f650e13dcee00ded317.setContent(html_d814391b734fc1d9d47ebf92460f016b);
+            
+        
+
+        circle_marker_60af67b99e21cfeda41d9b0f1b925551.bindPopup(popup_850b23c3bf3c9f650e13dcee00ded317)
+        ;
+
+        
+    
+    
+            circle_marker_60af67b99e21cfeda41d9b0f1b925551.bindTooltip(
+                `<div>
+                     Campo Limpo: 1.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb90fdb835df7af221d08fa27b5dd4e8 = L.circleMarker(
+                [-23.505, -46.53],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2c230ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_eca09ac10e2829ead1d447322e5f39b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2aff99bf54dc558525fe0ed862393681 = $(`<div id="html_2aff99bf54dc558525fe0ed862393681" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Cangaiba</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,447<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.8 de 4<br>       <b>Alelo:</b> 65% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 60% &nbsp; <b>Ticket:</b> 70%     </div></div>`)[0];
+                popup_eca09ac10e2829ead1d447322e5f39b8.setContent(html_2aff99bf54dc558525fe0ed862393681);
+            
+        
+
+        circle_marker_cb90fdb835df7af221d08fa27b5dd4e8.bindPopup(popup_eca09ac10e2829ead1d447322e5f39b8)
+        ;
+
+        
+    
+    
+            circle_marker_cb90fdb835df7af221d08fa27b5dd4e8.bindTooltip(
+                `<div>
+                     Cangaiba: 2.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83f1096971e450a760bd4eb6c002d1ae = L.circleMarker(
+                [-23.668, -46.78],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2991fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_5b5fbb3f5b9801a6dc4f15879159e42c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcb4d1d6f39643c8ea47e4a2b7cb7d74 = $(`<div id="html_bcb4d1d6f39643c8ea47e4a2b7cb7d74" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Capao Redondo</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,752<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.9 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 45%<br>       <b>VR:</b> 50% &nbsp; <b>Ticket:</b> 55%     </div></div>`)[0];
+                popup_5b5fbb3f5b9801a6dc4f15879159e42c.setContent(html_bcb4d1d6f39643c8ea47e4a2b7cb7d74);
+            
+        
+
+        circle_marker_83f1096971e450a760bd4eb6c002d1ae.bindPopup(popup_5b5fbb3f5b9801a6dc4f15879159e42c)
+        ;
+
+        
+    
+    
+            circle_marker_83f1096971e450a760bd4eb6c002d1ae.bindTooltip(
+                `<div>
+                     Capao Redondo: 1.9 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fc9944a678e83c2100e6996f130d4c1 = L.circleMarker(
+                [-23.714, -46.6991],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d5c439ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.7, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_e8a96f2bcd18d0a98ddab6cee46eacd1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5c3d1dc27a6c4d584f0cb28c4fab3f6d = $(`<div id="html_5c3d1dc27a6c4d584f0cb28c4fab3f6d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Cidade Dutra</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 3,624<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.9 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 80% &nbsp; <b>Ticket:</b> 75%     </div></div>`)[0];
+                popup_e8a96f2bcd18d0a98ddab6cee46eacd1.setContent(html_5c3d1dc27a6c4d584f0cb28c4fab3f6d);
+            
+        
+
+        circle_marker_2fc9944a678e83c2100e6996f130d4c1.bindPopup(popup_e8a96f2bcd18d0a98ddab6cee46eacd1)
+        ;
+
+        
+    
+    
+            circle_marker_2fc9944a678e83c2100e6996f130d4c1.bindTooltip(
+                `<div>
+                     Cidade Dutra: 2.9 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12ae51e4a9ef2e0595ed9c46c510905a = L.circleMarker(
+                [-23.59, -46.399],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b92cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.649999999999999, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_07360a4fbd7b5caf36818ed08e347509 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_887eafd2038df102fbd5dcba1b249b93 = $(`<div id="html_887eafd2038df102fbd5dcba1b249b93" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Cidade Tiradentes</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,759<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 50% &nbsp; <b>Sodexo:</b> 70%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 65%     </div></div>`)[0];
+                popup_07360a4fbd7b5caf36818ed08e347509.setContent(html_887eafd2038df102fbd5dcba1b249b93);
+            
+        
+
+        circle_marker_12ae51e4a9ef2e0595ed9c46c510905a.bindPopup(popup_07360a4fbd7b5caf36818ed08e347509)
+        ;
+
+        
+    
+    
+            circle_marker_12ae51e4a9ef2e0595ed9c46c510905a.bindTooltip(
+                `<div>
+                     Cidade Tiradentes: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d468a27bdebdf9b71769e996ab3ff94b = L.circleMarker(
+                [-23.615, -46.628],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2851bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.65, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_c7e360a4c9cff4d9250deb06819d849f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d02fb1f333d6d5aae04b6a71fed71af1 = $(`<div id="html_d02fb1f333d6d5aae04b6a71fed71af1" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Cursino</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,085<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.6 de 4<br>       <b>Alelo:</b> 20% &nbsp; <b>Sodexo:</b> 50%<br>       <b>VR:</b> 45% &nbsp; <b>Ticket:</b> 40%     </div></div>`)[0];
+                popup_c7e360a4c9cff4d9250deb06819d849f.setContent(html_d02fb1f333d6d5aae04b6a71fed71af1);
+            
+        
+
+        circle_marker_d468a27bdebdf9b71769e996ab3ff94b.bindPopup(popup_c7e360a4c9cff4d9250deb06819d849f)
+        ;
+
+        
+    
+    
+            circle_marker_d468a27bdebdf9b71769e996ab3ff94b.bindTooltip(
+                `<div>
+                     Cursino: 1.6 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ab4441505704fbc21623ed039e05420 = L.circleMarker(
+                [-23.4875, -46.6951],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ac74dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.600000000000001, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_27d91d6d97344a84d7cdd129e0cfaa29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_958b2734181a74c06adf0cf19741a1fd = $(`<div id="html_958b2734181a74c06adf0cf19741a1fd" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Freguesia Do O</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,620<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.2 de 4<br>       <b>Alelo:</b> 70% &nbsp; <b>Sodexo:</b> 85%<br>       <b>VR:</b> 90% &nbsp; <b>Ticket:</b> 75%     </div></div>`)[0];
+                popup_27d91d6d97344a84d7cdd129e0cfaa29.setContent(html_958b2734181a74c06adf0cf19741a1fd);
+            
+        
+
+        circle_marker_0ab4441505704fbc21623ed039e05420.bindPopup(popup_27d91d6d97344a84d7cdd129e0cfaa29)
+        ;
+
+        
+    
+    
+            circle_marker_0ab4441505704fbc21623ed039e05420.bindTooltip(
+                `<div>
+                     Freguesia Do O: 3.2 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_baa1758f7c2cf5c2019cc251d365f2aa = L.circleMarker(
+                [-23.76, -46.685],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b129ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.2, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_69d697ecd7f03936c4a805f9fbec156a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54fabecfc3131c144817c8a4f8eb171b = $(`<div id="html_54fabecfc3131c144817c8a4f8eb171b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Grajau</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,555<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.4 de 4<br>       <b>Alelo:</b> 45% &nbsp; <b>Sodexo:</b> 60%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 65%     </div></div>`)[0];
+                popup_69d697ecd7f03936c4a805f9fbec156a.setContent(html_54fabecfc3131c144817c8a4f8eb171b);
+            
+        
+
+        circle_marker_baa1758f7c2cf5c2019cc251d365f2aa.bindPopup(popup_69d697ecd7f03936c4a805f9fbec156a)
+        ;
+
+        
+    
+    
+            circle_marker_baa1758f7c2cf5c2019cc251d365f2aa.bindTooltip(
+                `<div>
+                     Grajau: 2.4 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fffd43d2ef80cd16abdc2234aea0c1c = L.circleMarker(
+                [-23.59, -46.605],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2bd2eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.95, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_345263067752b33ba8928e6bf787e7f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f9e56acfac1890691c8e95f6feab0c41 = $(`<div id="html_f9e56acfac1890691c8e95f6feab0c41" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Ipiranga</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,251<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.6 de 4<br>       <b>Alelo:</b> 60% &nbsp; <b>Sodexo:</b> 70%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 65%     </div></div>`)[0];
+                popup_345263067752b33ba8928e6bf787e7f0.setContent(html_f9e56acfac1890691c8e95f6feab0c41);
+            
+        
+
+        circle_marker_3fffd43d2ef80cd16abdc2234aea0c1c.bindPopup(popup_345263067752b33ba8928e6bf787e7f0)
+        ;
+
+        
+    
+    
+            circle_marker_3fffd43d2ef80cd16abdc2234aea0c1c.bindTooltip(
+                `<div>
+                     Ipiranga: 2.6 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8a6a8d1d0096a55736d0b022e21bd67 = L.circleMarker(
+                [-23.585, -46.675],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2bb2dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.8, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_90c8111eba0abc5db75c66f15eee9c54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8082323ee257acc032e0492b8dd4c92 = $(`<div id="html_c8082323ee257acc032e0492b8dd4c92" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Itaim Bibi</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 8,275<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.6 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 70%     </div></div>`)[0];
+                popup_90c8111eba0abc5db75c66f15eee9c54.setContent(html_c8082323ee257acc032e0492b8dd4c92);
+            
+        
+
+        circle_marker_e8a6a8d1d0096a55736d0b022e21bd67.bindPopup(popup_90c8111eba0abc5db75c66f15eee9c54)
+        ;
+
+        
+    
+    
+            circle_marker_e8a6a8d1d0096a55736d0b022e21bd67.bindTooltip(
+                `<div>
+                     Itaim Bibi: 2.6 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b68ae71abd5540f59e17ad1b94def422 = L.circleMarker(
+                [-23.535, -46.4459],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b42aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.350000000000001, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_df7e04de1a11334e4694c745ef086722 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_111d234073cd201738508fda0764ea55 = $(`<div id="html_111d234073cd201738508fda0764ea55" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Itaquera</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 3,013<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 50% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_df7e04de1a11334e4694c745ef086722.setContent(html_111d234073cd201738508fda0764ea55);
+            
+        
+
+        circle_marker_b68ae71abd5540f59e17ad1b94def422.bindPopup(popup_df7e04de1a11334e4694c745ef086722)
+        ;
+
+        
+    
+    
+            circle_marker_b68ae71abd5540f59e17ad1b94def422.bindTooltip(
+                `<div>
+                     Itaquera: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69630e317879b8048eaa76af634d7da8 = L.circleMarker(
+                [-23.647, -46.641],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2941eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.4, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_7480560f5b21ea39f498a41c6e9db09a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6566be11fe3b1d1c42bc02d94ed28ea2 = $(`<div id="html_6566be11fe3b1d1c42bc02d94ed28ea2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Jabaquara</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 6,885<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.8 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 50%<br>       <b>VR:</b> 50% &nbsp; <b>Ticket:</b> 40%     </div></div>`)[0];
+                popup_7480560f5b21ea39f498a41c6e9db09a.setContent(html_6566be11fe3b1d1c42bc02d94ed28ea2);
+            
+        
+
+        circle_marker_69630e317879b8048eaa76af634d7da8.bindPopup(popup_7480560f5b21ea39f498a41c6e9db09a)
+        ;
+
+        
+    
+    
+            circle_marker_69630e317879b8048eaa76af634d7da8.bindTooltip(
+                `<div>
+                     Jabaquara: 1.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf1b4ecb123cea3f89689a3a38db66a3 = L.circleMarker(
+                [-23.463, -46.5824],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b129ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.2, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_d5d9e647072cd1cbb2a9514ba9581ba6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_939ec415c45dee66852b49d1d4c46ea7 = $(`<div id="html_939ec415c45dee66852b49d1d4c46ea7" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Jacana</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,737<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.4 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 60% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_d5d9e647072cd1cbb2a9514ba9581ba6.setContent(html_939ec415c45dee66852b49d1d4c46ea7);
+            
+        
+
+        circle_marker_bf1b4ecb123cea3f89689a3a38db66a3.bindPopup(popup_d5d9e647072cd1cbb2a9514ba9581ba6)
+        ;
+
+        
+    
+    
+            circle_marker_bf1b4ecb123cea3f89689a3a38db66a3.bindTooltip(
+                `<div>
+                     Jacana: 2.4 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c44da432903bb9b5b619bd2a43ac206e = L.circleMarker(
+                [-23.69, -46.77],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b42aff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.350000000000001, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_a1c0e9d60decab5fbd1e8fe12348e0dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7a567add61ac8381861bef202de73924 = $(`<div id="html_7a567add61ac8381861bef202de73924" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Jardim Angela</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,965<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 45% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 65%     </div></div>`)[0];
+                popup_a1c0e9d60decab5fbd1e8fe12348e0dc.setContent(html_7a567add61ac8381861bef202de73924);
+            
+        
+
+        circle_marker_c44da432903bb9b5b619bd2a43ac206e.bindPopup(popup_a1c0e9d60decab5fbd1e8fe12348e0dc)
+        ;
+
+        
+    
+    
+            circle_marker_c44da432903bb9b5b619bd2a43ac206e.bindTooltip(
+                `<div>
+                     Jardim Angela: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6dcf19ae0bbe252a456f327e5572dfd = L.circleMarker(
+                [-23.5716, -46.6671],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b62bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_a5f97a3254cad929bdd52b278bfa6211 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a25ffdd1dc1de298f0ead42ba4609939 = $(`<div id="html_a25ffdd1dc1de298f0ead42ba4609939" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Jd Paulista</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 6,721<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 50% &nbsp; <b>Sodexo:</b> 60%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 70%     </div></div>`)[0];
+                popup_a5f97a3254cad929bdd52b278bfa6211.setContent(html_a25ffdd1dc1de298f0ead42ba4609939);
+            
+        
+
+        circle_marker_d6dcf19ae0bbe252a456f327e5572dfd.bindPopup(popup_a5f97a3254cad929bdd52b278bfa6211)
+        ;
+
+        
+    
+    
+            circle_marker_d6dcf19ae0bbe252a456f327e5572dfd.bindTooltip(
+                `<div>
+                     Jd Paulista: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ba7396b971dbf201818731ffdaded5c = L.circleMarker(
+                [-23.556, -46.4],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2a524ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.45, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_ff7a2d99173eeb3a5fe82fbc3531c6d8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b6007df332986f5af4702a494c454cb = $(`<div id="html_7b6007df332986f5af4702a494c454cb" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Lajeado</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,246<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.1 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 55%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 55%     </div></div>`)[0];
+                popup_ff7a2d99173eeb3a5fe82fbc3531c6d8.setContent(html_7b6007df332986f5af4702a494c454cb);
+            
+        
+
+        circle_marker_7ba7396b971dbf201818731ffdaded5c.bindPopup(popup_ff7a2d99173eeb3a5fe82fbc3531c6d8)
+        ;
+
+        
+    
+    
+            circle_marker_7ba7396b971dbf201818731ffdaded5c.bindTooltip(
+                `<div>
+                     Lajeado: 2.1 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37f2a123f2bb9dab8dc3504e74262084 = L.circleMarker(
+                [-23.5259, -46.7008],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2c230ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_419d77afd71a66c96b8aa79ff5acd0c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0469d5c15fb7118faa927408de8bc381 = $(`<div id="html_0469d5c15fb7118faa927408de8bc381" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Lapa</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,216<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.8 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 75% &nbsp; <b>Ticket:</b> 65%     </div></div>`)[0];
+                popup_419d77afd71a66c96b8aa79ff5acd0c9.setContent(html_0469d5c15fb7118faa927408de8bc381);
+            
+        
+
+        circle_marker_37f2a123f2bb9dab8dc3504e74262084.bindPopup(popup_419d77afd71a66c96b8aa79ff5acd0c9)
+        ;
+
+        
+    
+    
+            circle_marker_37f2a123f2bb9dab8dc3504e74262084.bindTooltip(
+                `<div>
+                     Lapa: 2.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c7e5894c53c134ade9a98bed8325250 = L.circleMarker(
+                [-23.6014, -46.665],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2af28ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.05, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_75c2a646a77cf130e4eecc6d852c9b38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6b10be9a1bb136edf652d10196d541e3 = $(`<div id="html_6b10be9a1bb136edf652d10196d541e3" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Moema</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 8,051<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.4 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 55%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_75c2a646a77cf130e4eecc6d852c9b38.setContent(html_6b10be9a1bb136edf652d10196d541e3);
+            
+        
+
+        circle_marker_6c7e5894c53c134ade9a98bed8325250.bindPopup(popup_75c2a646a77cf130e4eecc6d852c9b38)
+        ;
+
+        
+    
+    
+            circle_marker_6c7e5894c53c134ade9a98bed8325250.bindTooltip(
+                `<div>
+                     Moema: 2.4 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4fe6a77a57c387a3cf36afe42041e7a = L.circleMarker(
+                [-23.556, -46.597],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2a323ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.3, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_2d7356f70341e3705925fd29a8ec47d2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0e9728c5e4bed97e0df2ecfe9d3f9e3 = $(`<div id="html_e0e9728c5e4bed97e0df2ecfe9d3f9e3" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Mooca</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,007<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.1 de 4<br>       <b>Alelo:</b> 35% &nbsp; <b>Sodexo:</b> 50%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_2d7356f70341e3705925fd29a8ec47d2.setContent(html_e0e9728c5e4bed97e0df2ecfe9d3f9e3);
+            
+        
+
+        circle_marker_b4fe6a77a57c387a3cf36afe42041e7a.bindPopup(popup_2d7356f70341e3705925fd29a8ec47d2)
+        ;
+
+        
+    
+    
+            circle_marker_b4fe6a77a57c387a3cf36afe42041e7a.bindTooltip(
+                `<div>
+                     Mooca: 2.1 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c21d134a8e100720d8f6afbe5ff429a = L.circleMarker(
+                [-23.527, -46.542],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b62bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_8f8ad54c1de71e77689f07799f36348e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_768c54e514c91741d56672afa2243fcc = $(`<div id="html_768c54e514c91741d56672afa2243fcc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Penha</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,673<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 60% &nbsp; <b>Sodexo:</b> 65%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_8f8ad54c1de71e77689f07799f36348e.setContent(html_768c54e514c91741d56672afa2243fcc);
+            
+        
+
+        circle_marker_0c21d134a8e100720d8f6afbe5ff429a.bindPopup(popup_8f8ad54c1de71e77689f07799f36348e)
+        ;
+
+        
+    
+    
+            circle_marker_0c21d134a8e100720d8f6afbe5ff429a.bindTooltip(
+                `<div>
+                     Penha: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58f0a6e6ff9cc529e2d08587f680978c = L.circleMarker(
+                [-23.535, -46.67],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c1c540ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_c8fc50d762e56192eb7019786614c78e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0de732480fd6b30b5037de5c9e25072c = $(`<div id="html_0de732480fd6b30b5037de5c9e25072c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Perdizes</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,886<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.0 de 4<br>       <b>Alelo:</b> 65% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 75% &nbsp; <b>Ticket:</b> 80%     </div></div>`)[0];
+                popup_c8fc50d762e56192eb7019786614c78e.setContent(html_0de732480fd6b30b5037de5c9e25072c);
+            
+        
+
+        circle_marker_58f0a6e6ff9cc529e2d08587f680978c.bindPopup(popup_c8fc50d762e56192eb7019786614c78e)
+        ;
+
+        
+    
+    
+            circle_marker_58f0a6e6ff9cc529e2d08587f680978c.bindTooltip(
+                `<div>
+                     Perdizes: 3.0 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c9997ddeb45eeea3375f50490a4a27e = L.circleMarker(
+                [-23.405, -46.753],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2881bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_5e9badf5f19766d690354ec3e3b6418f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ce2a9d994783b4b08b563fb55997f87 = $(`<div id="html_3ce2a9d994783b4b08b563fb55997f87" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Perus</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 3,037<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.6 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 45%<br>       <b>VR:</b> 35% &nbsp; <b>Ticket:</b> 40%     </div></div>`)[0];
+                popup_5e9badf5f19766d690354ec3e3b6418f.setContent(html_3ce2a9d994783b4b08b563fb55997f87);
+            
+        
+
+        circle_marker_8c9997ddeb45eeea3375f50490a4a27e.bindPopup(popup_5e9badf5f19766d690354ec3e3b6418f)
+        ;
+
+        
+    
+    
+            circle_marker_8c9997ddeb45eeea3375f50490a4a27e.bindTooltip(
+                `<div>
+                     Perus: 1.6 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc207ff03ab51c48da3a5dbd51929c71 = L.circleMarker(
+                [-23.5629, -46.6908],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38cc6eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.1, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_bcdf6448ab2c9717767a8cd5f6fcfba0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_789fec3d1212b679b250bbdb3a688824 = $(`<div id="html_789fec3d1212b679b250bbdb3a688824" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Pinheiros</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 5,945<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.7 de 4<br>       <b>Alelo:</b> 85% &nbsp; <b>Sodexo:</b> 95%<br>       <b>VR:</b> 95% &nbsp; <b>Ticket:</b> 95%     </div></div>`)[0];
+                popup_bcdf6448ab2c9717767a8cd5f6fcfba0.setContent(html_789fec3d1212b679b250bbdb3a688824);
+            
+        
+
+        circle_marker_cc207ff03ab51c48da3a5dbd51929c71.bindPopup(popup_bcdf6448ab2c9717767a8cd5f6fcfba0)
+        ;
+
+        
+    
+    
+            circle_marker_cc207ff03ab51c48da3a5dbd51929c71.bindTooltip(
+                `<div>
+                     Pinheiros: 3.7 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_680573697171a2d5dc344bf5b57d3426 = L.circleMarker(
+                [-23.483, -46.725],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b92cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.649999999999999, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_665feec90d6e1e600c21a7cca2de5f5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_122726e04b9a319825d14b60c2123ba4 = $(`<div id="html_122726e04b9a319825d14b60c2123ba4" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Pirituba</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,520<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 45% &nbsp; <b>Sodexo:</b> 70%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 75%     </div></div>`)[0];
+                popup_665feec90d6e1e600c21a7cca2de5f5e.setContent(html_122726e04b9a319825d14b60c2123ba4);
+            
+        
+
+        circle_marker_680573697171a2d5dc344bf5b57d3426.bindPopup(popup_665feec90d6e1e600c21a7cca2de5f5e)
+        ;
+
+        
+    
+    
+            circle_marker_680573697171a2d5dc344bf5b57d3426.bindTooltip(
+                `<div>
+                     Pirituba: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7531bbad6cf935b3a29ac531a483538a = L.circleMarker(
+                [-23.585, -46.765],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2991fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_e0137c727bcb9c88904896d000b8b237 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_800191841cae3d7e4f342ae99a7bd45b = $(`<div id="html_800191841cae3d7e4f342ae99a7bd45b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Raposo Tavares</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 3,474<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.9 de 4<br>       <b>Alelo:</b> 45% &nbsp; <b>Sodexo:</b> 45%<br>       <b>VR:</b> 45% &nbsp; <b>Ticket:</b> 55%     </div></div>`)[0];
+                popup_e0137c727bcb9c88904896d000b8b237.setContent(html_800191841cae3d7e4f342ae99a7bd45b);
+            
+        
+
+        circle_marker_7531bbad6cf935b3a29ac531a483538a.bindPopup(popup_e0137c727bcb9c88904896d000b8b237)
+        ;
+
+        
+    
+    
+            circle_marker_7531bbad6cf935b3a29ac531a483538a.bindTooltip(
+                `<div>
+                     Raposo Tavares: 1.9 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_264d2928326c3301be4dd7917a1c9d93 = L.circleMarker(
+                [-23.605, -46.59],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c1c540ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_afb2e6452df63ecbbed2b4f7b5696e50 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0773492d22e958f87c4b2b9f7dec32ac = $(`<div id="html_0773492d22e958f87c4b2b9f7dec32ac" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Sacoma</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,789<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.0 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 80% &nbsp; <b>Ticket:</b> 85%     </div></div>`)[0];
+                popup_afb2e6452df63ecbbed2b4f7b5696e50.setContent(html_0773492d22e958f87c4b2b9f7dec32ac);
+            
+        
+
+        circle_marker_264d2928326c3301be4dd7917a1c9d93.bindPopup(popup_afb2e6452df63ecbbed2b4f7b5696e50)
+        ;
+
+        
+    
+    
+            circle_marker_264d2928326c3301be4dd7917a1c9d93.bindTooltip(
+                `<div>
+                     Sacoma: 3.0 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9709dde2b138562103368d40020afe5 = L.circleMarker(
+                [-23.608, -46.475],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2881bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_7ea6163cdfff937f606a6a89291f1285 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34e085d98f530c1617390c89bce8115b = $(`<div id="html_34e085d98f530c1617390c89bce8115b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Sao Mateus</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,605<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.6 de 4<br>       <b>Alelo:</b> 25% &nbsp; <b>Sodexo:</b> 55%<br>       <b>VR:</b> 40% &nbsp; <b>Ticket:</b> 40%     </div></div>`)[0];
+                popup_7ea6163cdfff937f606a6a89291f1285.setContent(html_34e085d98f530c1617390c89bce8115b);
+            
+        
+
+        circle_marker_e9709dde2b138562103368d40020afe5.bindPopup(popup_7ea6163cdfff937f606a6a89291f1285)
+        ;
+
+        
+    
+    
+            circle_marker_e9709dde2b138562103368d40020afe5.bindTooltip(
+                `<div>
+                     Sao Mateus: 1.6 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe540a0eed91981a5af02d96d8554083 = L.circleMarker(
+                [-23.498, -46.444],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2971fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.55, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_9c4b33bcd9b229b24ea7a3ad2e7eb1a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8c7d3b22d3007ea3f0f8b3c888426fca = $(`<div id="html_8c7d3b22d3007ea3f0f8b3c888426fca" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Sao Miguel Paulista</h4>       <b>Perfil:</b> Q4 Popular<br>       <b>Renda média:</b> R$ 2,015<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 1.9 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 50%<br>       <b>VR:</b> 55% &nbsp; <b>Ticket:</b> 40%     </div></div>`)[0];
+                popup_9c4b33bcd9b229b24ea7a3ad2e7eb1a6.setContent(html_8c7d3b22d3007ea3f0f8b3c888426fca);
+            
+        
+
+        circle_marker_fe540a0eed91981a5af02d96d8554083.bindPopup(popup_9c4b33bcd9b229b24ea7a3ad2e7eb1a6)
+        ;
+
+        
+    
+    
+            circle_marker_fe540a0eed91981a5af02d96d8554083.bindTooltip(
+                `<div>
+                     Sao Miguel Paulista: 1.9 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea736386a3139996b2f62a95b5acb4c0 = L.circleMarker(
+                [-23.602, -46.51],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b92cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.649999999999999, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_c741cb14be3708dacfe14b3317be8aca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_58ed20bfd1e4fa5bcc8bb20e01a938cc = $(`<div id="html_58ed20bfd1e4fa5bcc8bb20e01a938cc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Sapopemba</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,651<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.5 de 4<br>       <b>Alelo:</b> 55% &nbsp; <b>Sodexo:</b> 70%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 60%     </div></div>`)[0];
+                popup_c741cb14be3708dacfe14b3317be8aca.setContent(html_58ed20bfd1e4fa5bcc8bb20e01a938cc);
+            
+        
+
+        circle_marker_ea736386a3139996b2f62a95b5acb4c0.bindPopup(popup_c741cb14be3708dacfe14b3317be8aca)
+        ;
+
+        
+    
+    
+            circle_marker_ea736386a3139996b2f62a95b5acb4c0.bindTooltip(
+                `<div>
+                     Sapopemba: 2.5 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb3218d3ce2b7490dfa23b7ef9737e37 = L.circleMarker(
+                [-23.54, -46.576],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2aa26ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.75, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_8b4630be322a67c0d008724e052baf40 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c02d890d02355f39497e84a67d645cc = $(`<div id="html_6c02d890d02355f39497e84a67d645cc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Tatuape</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,620<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.2 de 4<br>       <b>Alelo:</b> 50% &nbsp; <b>Sodexo:</b> 55%<br>       <b>VR:</b> 65% &nbsp; <b>Ticket:</b> 55%     </div></div>`)[0];
+                popup_8b4630be322a67c0d008724e052baf40.setContent(html_6c02d890d02355f39497e84a67d645cc);
+            
+        
+
+        circle_marker_eb3218d3ce2b7490dfa23b7ef9737e37.bindPopup(popup_8b4630be322a67c0d008724e052baf40)
+        ;
+
+        
+    
+    
+            circle_marker_eb3218d3ce2b7490dfa23b7ef9737e37.bindTooltip(
+                `<div>
+                     Tatuape: 2.2 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c15c244edd5e49e6d8f63ab9a2e949f7 = L.circleMarker(
+                [-23.6257, -46.727],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2c230ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_e20b23bee2dd2c893288c8279d1bccf0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dacd2cad412935184d2b8b2bcc8b8eed = $(`<div id="html_dacd2cad412935184d2b8b2bcc8b8eed" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Vila Andrade</h4>       <b>Perfil:</b> Q3 Médio<br>       <b>Renda média:</b> R$ 2,894<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.8 de 4<br>       <b>Alelo:</b> 50% &nbsp; <b>Sodexo:</b> 75%<br>       <b>VR:</b> 70% &nbsp; <b>Ticket:</b> 80%     </div></div>`)[0];
+                popup_e20b23bee2dd2c893288c8279d1bccf0.setContent(html_dacd2cad412935184d2b8b2bcc8b8eed);
+            
+        
+
+        circle_marker_c15c244edd5e49e6d8f63ab9a2e949f7.bindPopup(popup_e20b23bee2dd2c893288c8279d1bccf0)
+        ;
+
+        
+    
+    
+            circle_marker_c15c244edd5e49e6d8f63ab9a2e949f7.bindTooltip(
+                `<div>
+                     Vila Andrade: 2.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d6ea400493053a5a119e9c73451cc17 = L.circleMarker(
+                [-23.5878, -46.6358],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec647ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.3, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_6a998a5fa00b0621e5717651c9ac3a95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_654b73d3818227a84c5f1901e3f84744 = $(`<div id="html_654b73d3818227a84c5f1901e3f84744" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Vila Mariana</h4>       <b>Perfil:</b> Q1 Alto<br>       <b>Renda média:</b> R$ 5,438<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 3.1 de 4<br>       <b>Alelo:</b> 65% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 85% &nbsp; <b>Ticket:</b> 80%     </div></div>`)[0];
+                popup_6a998a5fa00b0621e5717651c9ac3a95.setContent(html_654b73d3818227a84c5f1901e3f84744);
+            
+        
+
+        circle_marker_2d6ea400493053a5a119e9c73451cc17.bindPopup(popup_6a998a5fa00b0621e5717651c9ac3a95)
+        ;
+
+        
+    
+    
+            circle_marker_2d6ea400493053a5a119e9c73451cc17.bindTooltip(
+                `<div>
+                     Vila Mariana: 3.1 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31fa073506c22464c5ab23d75108a31c = L.circleMarker(
+                [-23.585, -46.58],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2c02fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.100000000000001, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_48152543dbcd7b8175cbab70f78c2ca5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6eb89d58e2b82fe5baca67558a9bca92 = $(`<div id="html_6eb89d58e2b82fe5baca67558a9bca92" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Vila Prudente</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 2,865<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 2.7 de 4<br>       <b>Alelo:</b> 40% &nbsp; <b>Sodexo:</b> 80%<br>       <b>VR:</b> 75% &nbsp; <b>Ticket:</b> 75%     </div></div>`)[0];
+                popup_48152543dbcd7b8175cbab70f78c2ca5.setContent(html_6eb89d58e2b82fe5baca67558a9bca92);
+            
+        
+
+        circle_marker_31fa073506c22464c5ab23d75108a31c.bindPopup(popup_48152543dbcd7b8175cbab70f78c2ca5)
+        ;
+
+        
+    
+    
+            circle_marker_31fa073506c22464c5ab23d75108a31c.bindTooltip(
+                `<div>
+                     Vila Prudente: 2.7 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_097f625b260f6d09424a177a1a1ec26f = L.circleMarker(
+                [-23.5987, -46.7393],
+                {"bubblingMouseEvents": true, "color": "#46334F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f24f13ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.25, "stroke": true, "weight": 1}
+            ).addTo(map_22b70f9bb9686663a3b291f83094228f);
+        
+    
+        var popup_6a509e8b75244aab585754f6176d791d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d4d524af13df299a148e5856c7fcd4de = $(`<div id="html_d4d524af13df299a148e5856c7fcd4de" style="width: 100.0%; height: 100.0%;">     <div style="font-family:sans-serif; width:220px">       <h4 style="margin:0 0 6px 0; color:#46334F">Vila Sonia</h4>       <b>Perfil:</b> Q2 Médio-alto<br>       <b>Renda média:</b> R$ 3,167<br>       <hr style="margin:5px 0">       <b>Bandeiras privadas (média):</b> 0.8 de 4<br>       <b>Alelo:</b> 15% &nbsp; <b>Sodexo:</b> 25%<br>       <b>VR:</b> 25% &nbsp; <b>Ticket:</b> 10%     </div></div>`)[0];
+                popup_6a509e8b75244aab585754f6176d791d.setContent(html_d4d524af13df299a148e5856c7fcd4de);
+            
+        
+
+        circle_marker_097f625b260f6d09424a177a1a1ec26f.bindPopup(popup_6a509e8b75244aab585754f6176d791d)
+        ;
+
+        
+    
+    
+            circle_marker_097f625b260f6d09424a177a1a1ec26f.bindTooltip(
+                `<div>
+                     Vila Sonia: 0.8 bandeiras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_f7078a9e2c03fb1990ed05a92898c489 = {};
+
+    
+    color_map_f7078a9e2c03fb1990ed05a92898c489.color = d3.scale.threshold()
+              .domain([0.75, 0.7560120240480962, 0.7620240480961924, 0.7680360721442886, 0.7740480961923848, 0.780060120240481, 0.7860721442885772, 0.7920841683366734, 0.7980961923847696, 0.8041082164328657, 0.8101202404809619, 0.8161322645290581, 0.8221442885771543, 0.8281563126252505, 0.8341683366733467, 0.8401803607214429, 0.8461923847695391, 0.8522044088176353, 0.8582164328657315, 0.8642284569138277, 0.8702404809619239, 0.87625250501002, 0.8822645290581163, 0.8882765531062125, 0.8942885771543087, 0.9003006012024048, 0.9063126252505009, 0.9123246492985972, 0.9183366733466933, 0.9243486973947896, 0.9303607214428857, 0.9363727454909819, 0.9423847695390781, 0.9483967935871743, 0.9544088176352705, 0.9604208416833667, 0.9664328657314629, 0.9724448897795591, 0.9784569138276553, 0.9844689378757515, 0.9904809619238477, 0.9964929859719439, 1.00250501002004, 1.0085170340681362, 1.0145290581162325, 1.0205410821643286, 1.026553106212425, 1.032565130260521, 1.0385771543086173, 1.0445891783567134, 1.0506012024048097, 1.0566132264529058, 1.0626252505010019, 1.0686372745490982, 1.0746492985971945, 1.0806613226452906, 1.0866733466933867, 1.092685370741483, 1.0986973947895793, 1.1047094188376754, 1.1107214428857715, 1.1167334669338678, 1.1227454909819639, 1.1287575150300602, 1.1347695390781563, 1.1407815631262526, 1.1467935871743486, 1.152805611222445, 1.158817635270541, 1.1648296593186374, 1.1708416833667334, 1.1768537074148298, 1.1828657314629258, 1.188877755511022, 1.1948897795591182, 1.2009018036072145, 1.2069138276553106, 1.2129258517034067, 1.218937875751503, 1.2249498997995991, 1.2309619238476954, 1.2369739478957915, 1.2429859719438878, 1.248997995991984, 1.2550100200400802, 1.2610220440881763, 1.2670340681362724, 1.2730460921843687, 1.279058116232465, 1.285070140280561, 1.2910821643286572, 1.2970941883767535, 1.3031062124248498, 1.309118236472946, 1.315130260521042, 1.3211422845691383, 1.3271543086172346, 1.3331663326653307, 1.3391783567134268, 1.345190380761523, 1.3512024048096194, 1.3572144288577155, 1.3632264529058116, 1.3692384769539077, 1.375250501002004, 1.3812625250501003, 1.3872745490981964, 1.3932865731462925, 1.3992985971943888, 1.405310621242485, 1.4113226452905812, 1.4173346693386772, 1.4233466933867736, 1.4293587174348699, 1.435370741482966, 1.441382765531062, 1.4473947895791583, 1.4534068136272547, 1.4594188376753507, 1.4654308617234468, 1.4714428857715431, 1.4774549098196392, 1.4834669338677355, 1.4894789579158316, 1.4954909819639277, 1.501503006012024, 1.5075150300601203, 1.5135270541082164, 1.5195390781563125, 1.5255511022044088, 1.5315631262525051, 1.5375751503006012, 1.5435871743486973, 1.5495991983967936, 1.55561122244489, 1.561623246492986, 1.567635270541082, 1.5736472945891784, 1.5796593186372747, 1.5856713426853708, 1.5916833667334669, 1.597695390781563, 1.6037074148296593, 1.6097194388777556, 1.6157314629258517, 1.6217434869739478, 1.627755511022044, 1.6337675350701404, 1.6397795591182365, 1.6457915831663326, 1.6518036072144289, 1.6578156312625252, 1.6638276553106213, 1.6698396793587174, 1.6758517034068137, 1.68186372745491, 1.687875751503006, 1.6938877755511021, 1.6998997995991982, 1.7059118236472945, 1.7119238476953909, 1.717935871743487, 1.723947895791583, 1.7299599198396793, 1.7359719438877756, 1.7419839679358717, 1.7479959919839678, 1.7540080160320641, 1.7600200400801602, 1.7660320641282565, 1.7720440881763526, 1.778056112224449, 1.784068136272545, 1.7900801603206413, 1.7960921843687374, 1.8021042084168337, 1.8081162324649298, 1.8141282565130261, 1.8201402805611222, 1.8261523046092185, 1.8321643286573146, 1.838176352705411, 1.844188376753507, 1.8502004008016033, 1.8562124248496994, 1.8622244488977955, 1.8682364729458918, 1.8742484969939879, 1.8802605210420842, 1.8862725450901803, 1.8922845691382766, 1.8982965931863727, 1.904308617234469, 1.910320641282565, 1.9163326653306614, 1.9223446893787575, 1.9283567134268538, 1.9343687374749499, 1.9403807615230462, 1.9463927855711423, 1.9524048096192386, 1.9584168336673347, 1.964428857715431, 1.970440881763527, 1.9764529058116231, 1.9824649298597194, 1.9884769539078155, 1.9944889779559118, 2.000501002004008, 2.0065130260521045, 2.0125250501002006, 2.0185370741482966, 2.0245490981963927, 2.030561122244489, 2.036573146292585, 2.0425851703406814, 2.0485971943887775, 2.054609218436874, 2.06062124248497, 2.0666332665330662, 2.0726452905811623, 2.0786573146292584, 2.0846693386773545, 2.0906813627254506, 2.096693386773547, 2.102705410821643, 2.1087174348697397, 2.114729458917836, 2.120741482965932, 2.126753507014028, 2.132765531062124, 2.13877755511022, 2.1447895791583167, 2.150801603206413, 2.1568136272545093, 2.1628256513026054, 2.1688376753507015, 2.1748496993987976, 2.1808617234468937, 2.1868737474949898, 2.1928857715430863, 2.1988977955911824, 2.2049098196392785, 2.210921843687375, 2.216933867735471, 2.222945891783567, 2.2289579158316633, 2.2349699398797593, 2.2409819639278554, 2.246993987975952, 2.253006012024048, 2.2590180360721446, 2.2650300601202407, 2.2710420841683367, 2.277054108216433, 2.283066132264529, 2.289078156312625, 2.2950901803607215, 2.3011022044088176, 2.3071142284569137, 2.3131262525050102, 2.3191382765531063, 2.3251503006012024, 2.3311623246492985, 2.3371743486973946, 2.3431863727454907, 2.349198396793587, 2.3552104208416833, 2.36122244488978, 2.367234468937876, 2.373246492985972, 2.379258517034068, 2.385270541082164, 2.3912825651302603, 2.397294589178357, 2.403306613226453, 2.4093186372745494, 2.4153306613226455, 2.4213426853707416, 2.4273547094188377, 2.4333667334669338, 2.43937875751503, 2.445390781563126, 2.4514028056112225, 2.4574148296593186, 2.463426853707415, 2.469438877755511, 2.4754509018036073, 2.4814629258517034, 2.4874749498997994, 2.4934869739478955, 2.499498997995992, 2.505511022044088, 2.5115230460921847, 2.5175350701402808, 2.523547094188377, 2.529559118236473, 2.535571142284569, 2.541583166332665, 2.547595190380761, 2.5536072144288577, 2.559619238476954, 2.5656312625250504, 2.5716432865731464, 2.5776553106212425, 2.5836673346693386, 2.5896793587174347, 2.595691382765531, 2.6017034068136273, 2.6077154308617234, 2.61372745490982, 2.619739478957916, 2.625751503006012, 2.631763527054108, 2.6377755511022043, 2.6437875751503004, 2.6497995991983965, 2.655811623246493, 2.661823647294589, 2.6678356713426856, 2.6738476953907817, 2.679859719438878, 2.685871743486974, 2.69188376753507, 2.697895791583166, 2.7039078156312626, 2.7099198396793587, 2.715931863727455, 2.7219438877755513, 2.7279559118236474, 2.7339679358717435, 2.7399799599198396, 2.7459919839679356, 2.752004008016032, 2.7580160320641283, 2.7640280561122244, 2.7700400801603204, 2.776052104208417, 2.782064128256513, 2.788076152304609, 2.7940881763527052, 2.8001002004008018, 2.806112224448898, 2.812124248496994, 2.81813627254509, 2.8241482965931866, 2.8301603206412826, 2.8361723446893787, 2.842184368737475, 2.8481963927855714, 2.8542084168336674, 2.8602204408817635, 2.8662324649298596, 2.8722444889779557, 2.8782565130260522, 2.8842685370741483, 2.8902805611222444, 2.8962925851703405, 2.902304609218437, 2.908316633266533, 2.914328657314629, 2.9203406813627253, 2.926352705410822, 2.932364729458918, 2.938376753507014, 2.94438877755511, 2.9504008016032066, 2.9564128256513027, 2.962424849699399, 2.968436873747495, 2.974448897795591, 2.9804609218436875, 2.9864729458917836, 2.9924849699398797, 2.9984969939879758, 3.0045090180360723, 3.0105210420841684, 3.0165330661322645, 3.0225450901803605, 3.028557114228457, 3.034569138276553, 3.0405811623246493, 3.0465931863727453, 3.052605210420842, 3.058617234468938, 3.064629258517034, 3.07064128256513, 3.0766533066132267, 3.0826653306613228, 3.088677354709419, 3.094689378757515, 3.100701402805611, 3.1067134268537075, 3.1127254509018036, 3.1187374749498997, 3.124749498997996, 3.1307615230460923, 3.1367735470941884, 3.1427855711422845, 3.1487975951903806, 3.154809619238477, 3.1608216432865732, 3.1668336673346693, 3.1728456913827654, 3.178857715430862, 3.184869739478958, 3.190881763527054, 3.19689378757515, 3.2029058116232463, 3.208917835671343, 3.214929859719439, 3.220941883767535, 3.226953907815631, 3.2329659318637276, 3.2389779559118237, 3.24498997995992, 3.251002004008016, 3.2570140280561124, 3.2630260521042085, 3.2690380761523046, 3.2750501002004007, 3.281062124248497, 3.2870741482965933, 3.2930861723446894, 3.2990981963927855, 3.305110220440882, 3.311122244488978, 3.317134268537074, 3.3231462925851702, 3.3291583166332663, 3.335170340681363, 3.341182364729459, 3.347194388777555, 3.353206412825651, 3.3592184368737477, 3.3652304609218437, 3.37124248496994, 3.377254509018036, 3.3832665330661325, 3.3892785571142285, 3.3952905811623246, 3.4013026052104207, 3.4073146292585172, 3.4133266533066133, 3.4193386773547094, 3.4253507014028055, 3.4313627254509016, 3.437374749498998, 3.443386773547094, 3.4493987975951903, 3.4554108216432864, 3.461422845691383, 3.467434869739479, 3.473446893787575, 3.479458917835671, 3.4854709418837677, 3.491482965931864, 3.49749498997996, 3.503507014028056, 3.5095190380761525, 3.5155310621242486, 3.5215430861723447, 3.5275551102204408, 3.533567134268537, 3.5395791583166334, 3.5455911823647295, 3.5516032064128256, 3.5576152304609217, 3.563627254509018, 3.5696392785571143, 3.5756513026052104, 3.5816633266533064, 3.587675350701403, 3.593687374749499, 3.599699398797595, 3.6057114228456912, 3.6117234468937878, 3.617735470941884, 3.62374749498998, 3.629759519038076, 3.6357715430861726, 3.6417835671342687, 3.6477955911823647, 3.653807615230461, 3.659819639278557, 3.6658316633266534, 3.6718436873747495, 3.6778557114228456, 3.6838677354709417, 3.6898797595190382, 3.6958917835671343, 3.7019038076152304, 3.7079158316633265, 3.713927855711423, 3.719939879759519, 3.725951903807615, 3.7319639278557113, 3.737975951903808, 3.743987975951904, 3.75])
+              .range(['#f24f13ff', '#f24f13ff', '#f25013ff', '#f25013ff', '#f25013ff', '#f25113ff', '#f25113ff', '#f25213ff', '#f25213ff', '#f25213ff', '#f25313ff', '#f25313ff', '#f25413ff', '#f25413ff', '#f25413ff', '#f25513ff', '#f25514ff', '#f25614ff', '#f25614ff', '#f25614ff', '#f25714ff', '#f25714ff', '#f25814ff', '#f25814ff', '#f25914ff', '#f25914ff', '#f25914ff', '#f25a14ff', '#f25a14ff', '#f25b14ff', '#f25b14ff', '#f25b14ff', '#f25c15ff', '#f25c15ff', '#f25d15ff', '#f25d15ff', '#f25d15ff', '#f25e15ff', '#f25e15ff', '#f25f15ff', '#f25f15ff', '#f25f15ff', '#f26015ff', '#f26015ff', '#f26115ff', '#f26115ff', '#f26115ff', '#f26215ff', '#f26215ff', '#f26316ff', '#f26316ff', '#f26316ff', '#f26416ff', '#f26416ff', '#f26516ff', '#f26516ff', '#f26516ff', '#f26616ff', '#f26616ff', '#f26716ff', '#f26716ff', '#f26716ff', '#f26816ff', '#f26816ff', '#f26916ff', '#f26916ff', '#f26917ff', '#f26a17ff', '#f26a17ff', '#f26b17ff', '#f26b17ff', '#f26c17ff', '#f26c17ff', '#f26c17ff', '#f26d17ff', '#f26d17ff', '#f26e17ff', '#f26e17ff', '#f26e17ff', '#f26f17ff', '#f26f17ff', '#f27017ff', '#f27018ff', '#f27018ff', '#f27118ff', '#f27118ff', '#f27218ff', '#f27218ff', '#f27218ff', '#f27318ff', '#f27318ff', '#f27418ff', '#f27418ff', '#f27418ff', '#f27518ff', '#f27518ff', '#f27618ff', '#f27618ff', '#f27618ff', '#f27719ff', '#f27719ff', '#f27819ff', '#f27819ff', '#f27819ff', '#f27919ff', '#f27919ff', '#f27a19ff', '#f27a19ff', '#f27a19ff', '#f27b19ff', '#f27b19ff', '#f27c19ff', '#f27c19ff', '#f27d19ff', '#f27d19ff', '#f27d1aff', '#f27e1aff', '#f27e1aff', '#f27f1aff', '#f27f1aff', '#f27f1aff', '#f2801aff', '#f2801aff', '#f2811aff', '#f2811aff', '#f2811aff', '#f2821aff', '#f2821aff', '#f2831aff', '#f2831aff', '#f2831aff', '#f2841aff', '#f2841bff', '#f2851bff', '#f2851bff', '#f2851bff', '#f2861bff', '#f2861bff', '#f2871bff', '#f2871bff', '#f2871bff', '#f2881bff', '#f2881bff', '#f2891bff', '#f2891bff', '#f2891bff', '#f28a1bff', '#f28a1bff', '#f28b1cff', '#f28b1cff', '#f28b1cff', '#f28c1cff', '#f28c1cff', '#f28d1cff', '#f28d1cff', '#f28d1cff', '#f28e1cff', '#f28e1cff', '#f28f1cff', '#f28f1cff', '#f2901cff', '#f2901cff', '#f2901cff', '#f2911cff', '#f2911cff', '#f2921dff', '#f2921dff', '#f2921dff', '#f2931dff', '#f2931dff', '#f2931dff', '#f2931dff', '#f2941dff', '#f2941dff', '#f2941dff', '#f2951eff', '#f2951eff', '#f2951eff', '#f2951eff', '#f2961eff', '#f2961eff', '#f2961eff', '#f2971eff', '#f2971fff', '#f2971fff', '#f2971fff', '#f2981fff', '#f2981fff', '#f2981fff', '#f2991fff', '#f2991fff', '#f2991fff', '#f29a20ff', '#f29a20ff', '#f29a20ff', '#f29a20ff', '#f29b20ff', '#f29b20ff', '#f29b20ff', '#f29c20ff', '#f29c20ff', '#f29c21ff', '#f29c21ff', '#f29d21ff', '#f29d21ff', '#f29d21ff', '#f29e21ff', '#f29e21ff', '#f29e21ff', '#f29e22ff', '#f29f22ff', '#f29f22ff', '#f29f22ff', '#f2a022ff', '#f2a022ff', '#f2a022ff', '#f2a022ff', '#f2a122ff', '#f2a123ff', '#f2a123ff', '#f2a223ff', '#f2a223ff', '#f2a223ff', '#f2a223ff', '#f2a323ff', '#f2a323ff', '#f2a323ff', '#f2a424ff', '#f2a424ff', '#f2a424ff', '#f2a524ff', '#f2a524ff', '#f2a524ff', '#f2a524ff', '#f2a624ff', '#f2a624ff', '#f2a625ff', '#f2a725ff', '#f2a725ff', '#f2a725ff', '#f2a725ff', '#f2a825ff', '#f2a825ff', '#f2a825ff', '#f2a926ff', '#f2a926ff', '#f2a926ff', '#f2a926ff', '#f2aa26ff', '#f2aa26ff', '#f2aa26ff', '#f2ab26ff', '#f2ab26ff', '#f2ab27ff', '#f2ab27ff', '#f2ac27ff', '#f2ac27ff', '#f2ac27ff', '#f2ad27ff', '#f2ad27ff', '#f2ad27ff', '#f2ad27ff', '#f2ae28ff', '#f2ae28ff', '#f2ae28ff', '#f2af28ff', '#f2af28ff', '#f2af28ff', '#f2b028ff', '#f2b028ff', '#f2b029ff', '#f2b029ff', '#f2b129ff', '#f2b129ff', '#f2b129ff', '#f2b229ff', '#f2b229ff', '#f2b229ff', '#f2b229ff', '#f2b32aff', '#f2b32aff', '#f2b32aff', '#f2b42aff', '#f2b42aff', '#f2b42aff', '#f2b42aff', '#f2b52aff', '#f2b52aff', '#f2b52bff', '#f2b62bff', '#f2b62bff', '#f2b62bff', '#f2b62bff', '#f2b72bff', '#f2b72bff', '#f2b72bff', '#f2b82bff', '#f2b82cff', '#f2b82cff', '#f2b92cff', '#f2b92cff', '#f2b92cff', '#f2b92cff', '#f2ba2cff', '#f2ba2cff', '#f2ba2dff', '#f2bb2dff', '#f2bb2dff', '#f2bb2dff', '#f2bb2dff', '#f2bc2dff', '#f2bc2dff', '#f2bc2dff', '#f2bd2dff', '#f2bd2eff', '#f2bd2eff', '#f2bd2eff', '#f2be2eff', '#f2be2eff', '#f2be2eff', '#f2bf2eff', '#f2bf2eff', '#f2bf2eff', '#f2bf2fff', '#f2c02fff', '#f2c02fff', '#f2c02fff', '#f2c12fff', '#f2c12fff', '#f2c12fff', '#f2c12fff', '#f2c22fff', '#f2c230ff', '#f2c230ff', '#f1c230ff', '#f0c231ff', '#efc231ff', '#edc331ff', '#ecc332ff', '#ebc332ff', '#eac333ff', '#e9c333ff', '#e7c333ff', '#e6c334ff', '#e5c334ff', '#e4c335ff', '#e3c335ff', '#e1c335ff', '#e0c336ff', '#dfc336ff', '#dec336ff', '#ddc337ff', '#dcc337ff', '#dac338ff', '#d9c438ff', '#d8c438ff', '#d7c439ff', '#d6c439ff', '#d4c43aff', '#d3c43aff', '#d2c43aff', '#d1c43bff', '#d0c43bff', '#cfc43cff', '#cdc43cff', '#ccc43cff', '#cbc43dff', '#cac43dff', '#c9c43eff', '#c7c43eff', '#c6c53eff', '#c5c53fff', '#c4c53fff', '#c3c540ff', '#c2c540ff', '#c0c540ff', '#bfc541ff', '#bec541ff', '#bdc541ff', '#bcc542ff', '#bac542ff', '#b9c543ff', '#b8c543ff', '#b7c543ff', '#b6c544ff', '#b5c544ff', '#b3c545ff', '#b2c645ff', '#b1c645ff', '#b0c646ff', '#afc646ff', '#adc647ff', '#acc647ff', '#abc647ff', '#aac648ff', '#a9c648ff', '#a8c649ff', '#a6c649ff', '#a5c649ff', '#a4c64aff', '#a3c64aff', '#a2c64aff', '#a0c64bff', '#9fc74bff', '#9ec74cff', '#9dc74cff', '#9cc74cff', '#9bc74dff', '#99c74dff', '#98c74eff', '#97c74eff', '#96c74eff', '#95c74fff', '#93c74fff', '#92c750ff', '#91c750ff', '#90c750ff', '#8fc751ff', '#8ec751ff', '#8cc752ff', '#8bc852ff', '#8ac852ff', '#89c853ff', '#88c853ff', '#86c854ff', '#85c854ff', '#84c854ff', '#83c855ff', '#82c855ff', '#80c855ff', '#7fc856ff', '#7ec856ff', '#7dc857ff', '#7cc857ff', '#7bc857ff', '#79c858ff', '#78c858ff', '#77c959ff', '#76c959ff', '#75c959ff', '#73c95aff', '#72c95aff', '#71c95bff', '#70c95bff', '#6fc95bff', '#6ec95cff', '#6cc95cff', '#6bc95dff', '#6ac95dff', '#69c95dff', '#68c95eff', '#66c95eff', '#65c95fff', '#64ca5fff', '#63ca5fff', '#62ca60ff', '#61ca60ff', '#5fca60ff', '#5eca61ff', '#5dca61ff', '#5cca62ff', '#5bca62ff', '#59ca62ff', '#58ca63ff', '#57ca63ff', '#56ca64ff', '#55ca64ff', '#54ca64ff', '#52ca65ff', '#51ca65ff', '#50cb66ff', '#4fcb66ff', '#4ecb66ff', '#4ccb67ff', '#4bcb67ff', '#4acb68ff', '#49cb68ff', '#48cb68ff', '#47cb69ff', '#45cb69ff', '#44cb69ff', '#43cb6aff', '#42cb6aff', '#41cb6bff', '#3fcb6bff', '#3ecb6bff', '#3dcc6cff', '#3ccc6cff', '#3bcc6dff', '#3acc6dff', '#38cc6dff', '#37cc6eff', '#36cc6eff', '#35cc6fff', '#34cc6fff', '#32cc6fff', '#31cc70ff', '#30cc70ff', '#2fcc71ff', '#2ecc71ff']);
+    
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.x = d3.scale.linear()
+              .domain([0.75, 3.75])
+              .range([0, 450 - 50]);
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.legend = L.control({position: 'topright'});
+    color_map_f7078a9e2c03fb1990ed05a92898c489.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_f7078a9e2c03fb1990ed05a92898c489.legend.addTo(map_22b70f9bb9686663a3b291f83094228f);
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.xAxis = d3.svg.axis()
+        .scale(color_map_f7078a9e2c03fb1990ed05a92898c489.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.75, 1.75, 2.75, 3.75]);
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.g = color_map_f7078a9e2c03fb1990ed05a92898c489.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.g.selectAll("rect")
+        .data(color_map_f7078a9e2c03fb1990ed05a92898c489.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_f7078a9e2c03fb1990ed05a92898c489.x(color_map_f7078a9e2c03fb1990ed05a92898c489.color.domain()[i - 1]) : color_map_f7078a9e2c03fb1990ed05a92898c489.x.range()[0],
+            x1: i < color_map_f7078a9e2c03fb1990ed05a92898c489.color.domain().length ? color_map_f7078a9e2c03fb1990ed05a92898c489.x(color_map_f7078a9e2c03fb1990ed05a92898c489.color.domain()[i]) : color_map_f7078a9e2c03fb1990ed05a92898c489.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_f7078a9e2c03fb1990ed05a92898c489.g.call(color_map_f7078a9e2c03fb1990ed05a92898c489.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Quantidade m\u00e9dia de bandeiras privadas (0 a 4)");
+</script>
+</html>
