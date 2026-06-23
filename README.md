@@ -35,6 +35,18 @@ Painel construído no Looker Studio (Data Studio), com KPIs, cobertura por bande
 
 Cobertura por bandeira: iFood Benefícios 96,6%, VR 64,5%, Sodexo 64,2%, Ticket 61,6%, Alelo 49,2%.
 
+## Impacto de negócio estimado
+
+Para traduzir a lacuna de cobertura em termos de negócio, estimei a receita anual não realizada pelo iFood quando um usuário não encontra a sua bandeira e desiste do pedido. Partindo de uma probabilidade de 40,1% de não encontrar a bandeira específica (a cobertura média das privadas é de 59,9%), cheguei a três cenários para a Grande São Paulo:
+
+| Cenário | Receita anual não realizada (estimativa) |
+|---|---|
+| Conservador | aproximadamente R$ 60 milhões |
+| Moderado | aproximadamente R$ 196 milhões |
+| Otimista | aproximadamente R$ 477 milhões |
+
+Importante: estes valores dependem de premissas que não podem ser validadas com os dados públicos disponíveis (número de usuários ativos, frequência de pedidos, taxa de conversão), então devem ser lidos como ordem de grandeza, não como valor exato. O ponto que se sustenta independentemente das premissas é que a lacuna de cobertura representa um volume de negócio relevante, não apenas uma inconveniência pontual para o usuário. O detalhamento das premissas está no notebook (seção 10).
+
 ## Hipóteses e o que os dados mostraram
 
 - **H1 (confirmada como tendência):** distritos de maior renda têm maior cobertura de bandeiras de VR. A relação aparece de forma robusta entre os quartis de renda (tendência de Spearman significativa para Alelo e VR, confirmada por qui-quadrado), embora a associação linear no nível do distrito individual seja fraca.
